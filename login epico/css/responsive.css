@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .section {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
