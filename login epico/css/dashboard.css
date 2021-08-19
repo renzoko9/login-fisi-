@@ -245,6 +245,7 @@ body {
   /* font-weight: 500; */
   /* margin: 18px; */
 }
+
 @media (max-width: 420px) {
   .sidebar li .tooltip {
     display: none;
