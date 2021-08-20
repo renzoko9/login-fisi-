@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/hamburguer.css" />
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/horarios.css">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/horarios.css" />
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -51,35 +51,35 @@
           <span class="tooltip">Search</span>
         </li> -->
           <li>
-            <a href="#">
+            <a href="index.html">
               <i class="bx bx-home"></i>
               <span class="links_name">Dashboard</span>
             </a>
             <span class="tooltip">Dashboard</span>
           </li>
           <li>
-            <a href="#">
+            <a href="dashboard_horarios.html">
               <i class="bx bxs-calendar"></i>
               <span class="links_name">Consultar Horarios</span>
             </a>
             <span class="tooltip">Consultar Horarios</span>
           </li>
           <li>
-            <a href="#">
+            <a href="dashboard_docentes.html">
               <i class="bx bx-user-circle"></i>
               <span class="links_name">Consultar Docentes</span>
             </a>
             <span class="tooltip">Consultar Docentes</span>
           </li>
           <li>
-            <a href="#">
+            <a href="dashboard_asignaturas.html">
               <i class="bx bx-folder-open"></i>
               <span class="links_name">Consultar Asignaturas</span>
             </a>
             <span class="tooltip">Consultar Asignaturas</span>
           </li>
           <li>
-            <a href="#">
+            <a href="dashboard_aulas.html">
               <i class="bx bx-map-pin"></i>
               <span class="links_name">Consultar Aulas</span>
             </a>
@@ -127,15 +127,17 @@
               <a href="#">Bienvenido Estudiante</a>
               <i class="bx bx-log-out" id="log_out"></i>
             </li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Consultar Horarios</a></li>
-            <li><a href="#">Consultar Docentes</a></li>
-            <li><a href="#"> Consultar Asignaturas</a></li>
-            <li><a href="#">Consultar Aulas</a></li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="dashboard_horarios.html">Consultar Horarios</a></li>
+            <li><a href="dashboard_docentes.html">Consultar Docentes</a></li>
+            <li>
+              <a href="dashboard_asignaturas.html"> Consultar Asignaturas</a>
+            </li>
+            <li><a href="dashboard_aulas.html">Consultar Aulas</a></li>
           </ul>
         </nav>
       </div>
-      
+
       <section class="section">
         <div class="container">
           <!--
@@ -198,191 +200,461 @@
 
           <div class="wrap">
             <ul class="tabs">
-              <li><a href="#tab1"><span class="fa fa-calendar"></span><span class="tab-text"> Mi Horario</span></a></li>
-              <li><a href="#tab2"><span class="fa fa-group"></span><span class="tab-text"> Todos los Horarios</span></a></li>
+              <li>
+                <a href="#tab1"
+                  ><span class="fa fa-calendar"></span
+                  ><span class="tab-text"> Mi Horario</span></a
+                >
+              </li>
+              <li>
+                <a href="#tab2"
+                  ><span class="fa fa-group"></span
+                  ><span class="tab-text"> Todos los Horarios</span></a
+                >
+              </li>
             </ul>
-        
+
             <div class="secciones">
               <article id="tab1">
                 <h1>Horario de Asignaturas Matriculadas</h1>
-                        <h3>Semestre 2021-1</h3>
-                <table id="tablaHorarios" class="table table-bordered table-curved">
-                            <thead>
-                                <tr>
-                                    <th scope="col" style="text-align: center; width: 7%"></th>
-                                    <th scope="col" style="text-align: center; width: 7%">Lunes</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Martes</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Miercoles</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Jueves</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Viernes</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Sábado</th>
-                                    <th scope="col" style="text-align: center; width: 7%">Domingo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">7 - 8</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">8 - 9</th>
-                                    <td></td>
-                                    <td style="background-color: aqua; text-align: center; font-weight: bold">IHC</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">9 - 10</th>
-                                    <td></td>
-                                    <td style="background-color: aqua; text-align: center; font-weight: bold">IHC</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">10 - 11</th>
-                                    <td></td>
-                                    <td style="background-color: aqua; text-align: center; font-weight: bold">IHC</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">11 - 12</th>
-                                    <td></td>
-                                    <td style="background-color: aqua; text-align: center; font-weight: bold">IHC</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">12 - 13</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">13 - 14</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">14 - 15</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">15 - 16</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">16 - 17</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="background-color: palevioletred; text-align: center; font-weight: bold">Diseño</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">17 - 18</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="background-color: palevioletred; text-align: center; font-weight: bold">Diseño</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">18 - 19</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="background-color: palevioletred; text-align: center; font-weight: bold">Diseño</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">19 - 20</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="background-color: palevioletred; text-align: center; font-weight: bold">Diseño</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">20 - 21</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">21 - 22</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" style="background-color: #f1f5f9; color: #56688A; vertical-align: middle; text-align: center; font-size: 12px;">22 - 23</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button class="btn btn-success">Descargar PDF</button>
+                <h3>Semestre 2021-1</h3>
+                <table
+                  id="tablaHorarios"
+                  class="table table-bordered table-curved"
+                >
+                  <thead>
+                    <tr>
+                      <th
+                        scope="col"
+                        style="text-align: center; width: 7%"
+                      ></th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Lunes
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Martes
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Miercoles
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Jueves
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Viernes
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Sábado
+                      </th>
+                      <th scope="col" style="text-align: center; width: 7%">
+                        Domingo
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        7 - 8
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        8 - 9
+                      </th>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: aqua;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        IHC
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        9 - 10
+                      </th>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: aqua;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        IHC
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        10 - 11
+                      </th>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: aqua;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        IHC
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        11 - 12
+                      </th>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: aqua;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        IHC
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        12 - 13
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        13 - 14
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        14 - 15
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        15 - 16
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        16 - 17
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: palevioletred;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        Diseño
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        17 - 18
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: palevioletred;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        Diseño
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        18 - 19
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: palevioletred;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        Diseño
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        19 - 20
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td
+                        style="
+                          background-color: palevioletred;
+                          text-align: center;
+                          font-weight: bold;
+                        "
+                      >
+                        Diseño
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        20 - 21
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        21 - 22
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        style="
+                          background-color: #f1f5f9;
+                          color: #56688a;
+                          vertical-align: middle;
+                          text-align: center;
+                          font-size: 12px;
+                        "
+                      >
+                        22 - 23
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn btn-success">Descargar PDF</button>
               </article>
               <article id="tab2">
                 <div>
@@ -391,7 +663,9 @@
                     <form action="">
                       <div class="input-group my-3">
                         <div class="input-group-prepend">
-                          <label class="input-group-text" for="inputGroupSelect01"
+                          <label
+                            class="input-group-text"
+                            for="inputGroupSelect01"
                             >Día</label
                           >
                         </div>
@@ -408,7 +682,7 @@
                     </form>
                   </div>
                 </div>
-      
+
                 <table class="table">
                   <thead class="thead-dark">
                     <tr>
@@ -439,7 +713,6 @@
                     </tr>
                   </tbody>
                 </table>
-      
               </article>
             </div>
           </div>
