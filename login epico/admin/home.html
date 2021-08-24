@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/hamburguer.css" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <aside class="sidebar">
+            <div class="logo-details">
+              <div class="logo_name">FISI</div>
+              <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="home.html">
+                  <i class="fas fa-home"></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+              </li>
+              <li>
+                <a href="alumnos.html">
+                    <i class="fas fa-users"></i>
+                  <span class="links_name">Gestionar Alumnos</span>
+                </a>
+                <span class="tooltip">Gestionar Alumnos</span>
+              </li>
+              <li>
+                <a href="dashboard_docentes.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                  <span class="links_name">Gestionar Docentes</span>
+                </a>
+                <span class="tooltip">Gestionar Docentes</span>
+              </li>
+              <li>
+                <a href="dashboard_asignaturas.html">
+                  <i class="fas fa-folder-open"></i>
+                  <span class="links_name">Gestionar Asignaturas</span>
+                </a>
+                <span class="tooltip">Gestionar Asignaturas</span>
+              </li>
+              <li>
+                <a href="horarios.html">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span class="links_name">Asignar horarios</span>
+                </a>
+                <span class="tooltip">Asignar horarios</span>
+              </li>
+              <li class="profile">
+                <div class="profile-details">
+                  <div class="name_job">
+                    <div class="name">Prem Shahi</div>
+                    <div class="job">Administrador</div>
+                  </div>
+                </div>
+                <i class="bx bx-log-out" id="log_out"></i>
+              </li>
+            </ul>
+          </aside>
+          <div class="div__menu-lateral">
+            <div class="div__hamburguesa">
+              <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <nav class="menu-lateral">
+              <ul>
+                <li class="li-profile">
+                  <a href="#">Bienvenido Administrador</a>
+                  <i class="bx bx-log-out" id="log_out"></i>
+                </li>
+                <li><a href="home.html">Dashboard</a></li>
+                <li><a href="horarios.html">Asignar Horarios</a></li>
+                <li><a href="dashboard_docentes.html">Gestionar Docentes</a></li>
+                <li>
+                  <a href="dashboard_asignaturas.html">Gestionar Asignaturas</a>
+                </li>
+                <li><a href="alumnos.html">Gestionar Alumnos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <section class="section">
+            <div class="container">
+                <h1 class="text-center">
+                    Bienvenido al Sistema de Gestión Docente - FISI
+                </h1>
+                <div class="container">
+                    <div class="row mx-auto">
+                      <div class="col-md-6 col-sm-12 d-flex align-items-center flex-column">
+                        <h3><span class="badge badge-dark">Alumnos</span></h3>
+                        <a href="alumnos.html">
+                            <img src="../assets/students.svg" class="my-3" alt="students-img" height="220">
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-sm-12 d-flex align-items-center flex-column">
+                        <h3><span class="badge badge-dark">Docentes</span></h3>
+                        <a href="">
+                            <img src="../assets/professor.svg" class="my-3" alt="professor-img" height="220">
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-sm-12 d-flex align-items-center flex-column">
+                        <h3><span class="badge badge-dark">Asignaturas</span></h3>
+                        <a href="">
+                            <img src="../assets/curses.svg" class="my-3" alt="curse-img" height="220">
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-sm-12 d-flex align-items-center flex-column">
+                        <h3><span class="badge badge-dark">Horarios</span></h3>
+                        <a href="horarios.html">
+                            <img src="../assets/classroom.svg" class="my-3" alt="classroom-img" height="220">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <script src="../js/app.js"></script>
+    <script src="../js/hamburguer.js"></script>
+</body>
+</html>
